@@ -27,7 +27,7 @@ class MyEditor:
             self._current_shape.set(self._start_x, self._start_y, x, y)
             self._shapes.append(self._current_shape)
             self._clear_preview()
-            self._current_shape.show(self._canvas)
+            self._redraw()
             self._current_shape = type(self._current_shape)()
 
     def _draw_preview(self):
